@@ -252,10 +252,27 @@ button:hover {
         font-size: 15px;
         height: 2.5em;
     }
-}
- footer{
+}footer {
     display: flex;
-     margin-top:10px;
-     margin-bottom: -30px;
-     justify-content: center;
- }
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: -30px;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+footer p {
+    font-size: 16px; /* Default font size */
+}
+
+/* Responsive Styles for Footer */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 14px; /* Reduce font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    footer p {
+        font-size: 12px; /* Further reduce font size for mobile */
+    }
+}
